@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.bothImages {
+  position: relative;
+  width: 100%;
+}
+
+.exterior {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.interior {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000;
+}
+
+.bothImages:hover 
+.interior 
+{
+	opacity: 1;
+}
+
+.top-left-text
+{
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	font-size: 40px;
+	background-color: grey;
+	opacity: 0.9;
+}
+
+</style>
+</head>
+<body>
+
+   
+<h2>Choose the color you want.</h2>
+<p>Click each color to see your result. <br> Hover over the image to switch from exterior/interior.</p>
+
+<div class="bothImages">
+  <img src="exteriorOrange.png" class= "exterior">
+  <div class = "top-left-text">Hover over to view interior.</div>
+  <div class="interior">
+	<img src="interiorOrange.jpg" class= "exterior"> 
+	<div class = "top-left-text">Select colors on top to switch between colors.</div>
+  </div>
+</div>
+
+</body>
+</html>
